@@ -1,19 +1,18 @@
 <div class="container">
     <app-navi></app-navi>
-    <div class="row" style="padding-top: 50px;">
-        <div class="col-3">
-            <app-brand></app-brand>
+    <div class="row">
+        <div class="col-3" style="padding-top: 50px; float: left;">
+            <div>
+                <app-brand></app-brand>
+            </div>
+            <div style="padding-top: 50px;">
+                <app-color></app-color>
+            </div>
         </div>
-        <div class="col-9">
-            <app-car></app-car>        
-        </div>
-    </div>
-    <div class="row" style="padding-top: 50px;">
-        <div class="col-3">
-            <app-color></app-color>
-        </div>
-        <div class="col-9">
-            <app-customer></app-customer>        
+        <div class="col-9" style="padding-top: 50px;">
+            <div>
+                <router-outlet></router-outlet>       
+            </div>
         </div>
     </div>
     <div class="row" style="padding-top: 50px;">
@@ -24,4 +23,4 @@
 </div>
 
 
-<router-outlet></router-outlet>
+
